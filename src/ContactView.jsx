@@ -79,10 +79,10 @@ const ContactView = ({ detail, index }) => {
       </table>
       <section className="btn-container">
         <div className="business" onClick={handleBusiness}>
-          💻
+          {toggle === START || toggle === ADDRESS ? "💻" : "👤"}
         </div>
         <div className="address" onClick={handleAddress}>
-          🏠
+          {toggle === START || toggle === BUSINESS ? "🏠" : "👤"}
         </div>
       </section>
     </section>
