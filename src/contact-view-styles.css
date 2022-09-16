@@ -1,10 +1,9 @@
 .contact {
   width: 80%;
-  min-height: 3rem;
-  border: solid 1px black;
+  min-height: 8rem;
   border-radius: 10px;
   padding: 0.5rem;
-  background-color: rgba(137, 137, 137, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 0.3rem 0;
   display: flex;
   flex-direction: row;
@@ -16,13 +15,17 @@ td {
   padding: 0 0.3rem;
 }
 
+table {
+  width: 100%;
+}
+
 .btn-container {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
-  width: 1.2rem;
-  height: 6.5rem;
-  /* background-color: blue; */
+  width: 2rem;
+  height: 8rem;
+  margin-right: 0.5rem;
 }
 
 .business,
@@ -31,10 +34,27 @@ td {
   width: 100%;
   line-height: 3.25rem;
   text-align: center;
-  background-color: rgba(125, 125, 125, 0.5);
+  /* background-color: rgba(94, 122, 174, 1); */
+  font-size: 1.8rem;
 }
 
 .business:hover,
 .address:hover {
-  background-color: rgba(125, 125, 125, 0.8);
+  background-color: rgba(197, 74, 74, 0.8);
+  cursor: pointer;
+}
+
+.name {
+}
+
+@media only screen and (min-width: 600px) {
+  .contact {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact {
+    width: 25%;
+  }
 }

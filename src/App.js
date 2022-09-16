@@ -25,6 +25,7 @@ function App() {
   return (
     <main className="App">
       <article className="contact-container">
+        <h1>Contacts</h1>
         {contactList.map((value, index) => (
           <ContactView detail={value} index={index} key={index} />
         ))}

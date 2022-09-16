@@ -26,30 +26,45 @@ const ContactView = ({ detail, index }) => {
         {toggle === START && (
           <tbody>
             <tr>
-              <td colSpan={2}>{detail.name}</td>
+              <th colSpan={2} className="name">
+                {detail.name}
+              </th>
             </tr>
             <tr>
-              <td>Username:</td>
+              <td>
+                <u>Username:</u>
+              </td>
               <td>{detail.username}</td>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.email}</td>
+              <td colSpan={2}>
+                <a href={`mailto:${detail.email}`}>{detail.email}</a>
+              </td>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.phone}</td>
+              <td colSpan={2}>
+                <a href={`tel:${detail.phone}`}>{detail.phone}</a>
+              </td>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.website}</td>
+              <td colSpan={2}>
+                <a href={detail.website}>{detail.website}</a>
+              </td>
             </tr>
           </tbody>
         )}
         {toggle === BUSINESS && id === detail.id && (
           <tbody>
             <tr>
-              <td colSpan={2}>{detail.name}</td>
+              <th colSpan={2} className="name">
+                {detail.name}
+              </th>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.company.name}</td>
+              <td>
+                <u>Company:</u>
+              </td>
+              <td>{detail.company.name}</td>
             </tr>
             <tr>
               <td colSpan={2}>{detail.company.bs}</td>
@@ -62,13 +77,18 @@ const ContactView = ({ detail, index }) => {
         {toggle === ADDRESS && id === detail.id && (
           <tbody>
             <tr>
-              <td colSpan={2}>{detail.name}</td>
+              <th colSpan={2} className="name">
+                {detail.name}
+              </th>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.address.suite}</td>
+              <td colSpan={2}>
+                <u>Address:</u>
+              </td>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.address.street}</td>
+              <td>{detail.address.suite}</td>
+              <td>{detail.address.street}</td>
             </tr>
             <tr>
               <td>{detail.address.city}</td>
