@@ -1,3 +1,11 @@
+# Contact List - real world app
+
+A responsive Contact list where the user can browse their list of contacts and view their details in different tabs.
+
+The starting tab is their profile with username, full name, email phone number and website. And other tabs include company related information including a short description and catchphrase. While another tab shows their address.
+
+Below is the standard create-react-app README
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
