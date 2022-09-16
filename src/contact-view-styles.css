@@ -1,0 +1,40 @@
+.contact {
+  width: 80%;
+  min-height: 3rem;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 0.5rem;
+  background-color: rgba(137, 137, 137, 0.5);
+  margin: 0.3rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+tr,
+td {
+  padding: 0 0.3rem;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: 1.2rem;
+  height: 6.5rem;
+  /* background-color: blue; */
+}
+
+.business,
+.address {
+  height: 50%;
+  width: 100%;
+  line-height: 3.25rem;
+  text-align: center;
+  background-color: rgba(125, 125, 125, 0.5);
+}
+
+.business:hover,
+.address:hover {
+  background-color: rgba(125, 125, 125, 0.8);
+}

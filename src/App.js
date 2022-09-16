@@ -24,9 +24,11 @@ function App() {
 
   return (
     <main className="App">
-      {contactList.map((value, index) => (
-        <ContactView detail={value} index={index} key={index} />
-      ))}
+      <article className="contact-container">
+        {contactList.map((value, index) => (
+          <ContactView detail={value} index={index} key={index} />
+        ))}
+      </article>
     </main>
   );
 }
