@@ -10,6 +10,22 @@ function App() {
   async function getContacts() {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     const json = await response.json();
+
+    json.sort((a, b) => {
+      let arrA = a.name.split(" ");
+      let nameA = arrA[arrA.length - 1].toUpperCase();
+      let arrB = b.name.split(" ");
+      let nameB = arrB[arrB.length - 1].toUpperCase();
+
+      if (nameA < nameB) {
+        return -1;
+      }
+      if (nameA > nameB) {
+        return 1;
+      }
+      return 0;
+    });
+
     setContactList(() => json);
     return json;
   }

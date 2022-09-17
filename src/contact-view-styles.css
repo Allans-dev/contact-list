@@ -34,17 +34,13 @@ table {
   width: 100%;
   line-height: 3.25rem;
   text-align: center;
-  /* background-color: rgba(94, 122, 174, 1); */
   font-size: 1.8rem;
 }
 
 .business:hover,
 .address:hover {
-  background-color: rgba(197, 74, 74, 0.8);
+  /* background-color: rgba(197, 74, 74, 0.8); */
   cursor: pointer;
-}
-
-.name {
 }
 
 @media only screen and (min-width: 600px) {

@@ -38,17 +38,17 @@ const ContactView = ({ detail, index }) => {
             </tr>
             <tr>
               <td colSpan={2}>
-                <a href={`mailto:${detail.email}`}>{detail.email}</a>
+                ✉️ <a href={`mailto:${detail.email}`}>{detail.email}</a>
               </td>
             </tr>
             <tr>
               <td colSpan={2}>
-                <a href={`tel:${detail.phone}`}>{detail.phone}</a>
+                📞 <a href={`tel:${detail.phone}`}>{detail.phone}</a>
               </td>
             </tr>
             <tr>
               <td colSpan={2}>
-                <a href={detail.website}>{detail.website}</a>
+                🌐 <a href={detail.website}>{detail.website}</a>
               </td>
             </tr>
           </tbody>
@@ -67,10 +67,14 @@ const ContactView = ({ detail, index }) => {
               <td>{detail.company.name}</td>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.company.bs}</td>
+              <td colSpan={2} style={{ textAlign: "center" }}>
+                {detail.company.bs}
+              </td>
             </tr>
             <tr>
-              <td colSpan={2}>{detail.company.catchPhrase}</td>
+              <td colSpan={2}>
+                <i>"{detail.company.catchPhrase}"</i>
+              </td>
             </tr>
           </tbody>
         )}
